@@ -1,4 +1,21 @@
-"# RunewalkerPublicFiles" 
+"# RunewalkerPublicFiles"
+
+This is a collection of some files I'm happy to make public facing to show the complexity of the project and the type of code I have been writing:
+- Mesh folder shows a novel way of storing 3D meshes through a corner based data structure and using loop subdivision to take prisms and smooth them into refined shapes. This method is used to create
+the fish in the game.
+
+- Objpool is an object pool for fast object instantiation and re-use.
+
+- IslandTileSpawn handles the logic for spawning island tiles of different terrain types and culling configurations of land tiles that lead to terrain anomalies.
+
+- TreeBuilder shows procedural generation of trees using techniques from computer graphics research to simulate the growth and death of each bud in each branch of the tree. Cinammon tree shows a 
+configuration of a tree and the easy setup it takes to make one using TreeBuilder.
+
+- RiverSpawn creates river points placed across the map using noise which then can be used to get the river height and width, information passed to the island physics and river water shaders.
+
+
+
+
 This output from a python script for counting C# and .shader lines shows the number of files and classes within the project, amounting to 61,788 lines of C# and 7070 lines of HLSL.
 
 323 C# classes and files.
